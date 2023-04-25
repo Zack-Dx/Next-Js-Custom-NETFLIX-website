@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "@/app/styles/common.module.css";
-import Moviecard from "../components/Moviecard";
+import MovieCard from "@/app/components/MovieCard";
 
 const Movie = async () => {
   const url = process.env.RAPID_URL;
@@ -15,7 +15,6 @@ const Movie = async () => {
   const response = await fetch(url, options);
   const data = await response.json();
   const movies = data.titles;
-
   return (
     <>
       <section className={styles.movieSection}>
@@ -23,7 +22,7 @@ const Movie = async () => {
           <h1>Series and Movie</h1>
           <div className={styles.card_section}>
             {movies.map((movie) => {
-              return <Moviecard key={movie.id} {...movie} />;
+              return <MovieCard key={movie.id} {...movie} />;
             })}
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "@/app/styles/common.module.css";
 import Link from "next/link";
-const Moviecard = (movie) => {
+const MovieCard = (movie) => {
   const { id, type, title, synopsis } = movie.jawSummary;
   return (
     <>
@@ -27,4 +27,4 @@ const Moviecard = (movie) => {
   );
 };
 
-export default Moviecard;
+export default MovieCard;

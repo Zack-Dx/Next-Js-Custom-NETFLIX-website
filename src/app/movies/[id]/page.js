@@ -20,7 +20,6 @@ const page = async ({ params }) => {
 
   return (
     <>
-      {" "}
       <div className={styles.container}>
         <h2 className={styles.movie_title}>
           Netflix \ <span> {movie.type} </span>{" "}
