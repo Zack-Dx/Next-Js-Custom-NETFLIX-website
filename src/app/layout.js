@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Mulish } from "next/font/google";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 // Font Setup
 const mulish = Mulish({
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
